@@ -17,7 +17,7 @@ function run(f, b) {
 
     const context = output.getContext('2d');
     context.drawImage(result, 0, 0);
-  });
+  }).catch(console.log);
 }
 
 render.addEventListener('click', () => {
@@ -27,6 +27,8 @@ render.addEventListener('click', () => {
   if (!f || !b) {
     throw new Error('you idiot');
   }
+
+  run(f, b);
 });
 
 Promise.all([
