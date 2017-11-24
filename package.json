@@ -1,0 +1,42 @@
+{
+  "name": "mirage",
+  "version": "1.0.0",
+  "description": "mirage tank maker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./scripts/serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idiotWu/mirage.git"
+  },
+  "keywords": [
+    "mirage",
+    "image"
+  ],
+  "author": "Dolphin Wood <dolphin.w.e@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idiotWu/mirage/issues"
+  },
+  "homepage": "https://github.com/idiotWu/mirage#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "css-loader": "^0.28.7",
+    "postcss-loader": "^2.0.8",
+    "style-loader": "^0.19.0",
+    "ts-loader": "^3.1.1",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^7.0.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.6.1",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "exif-js": "^2.3.0",
+    "tslib": "^1.8.0"
+  }
+}
