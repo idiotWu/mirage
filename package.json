@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node ./scripts/serve.js",
     "deploy": "./scripts/deploy.sh",
-    "build": "webpack --config ./scripts/webpack.prod.js"
+    "lint": "tslint --type-check -p . -t stylish {src}/**/*.ts",
+    "build": "webpack --config ./scripts/webpack.prod.js",
+    "test": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
