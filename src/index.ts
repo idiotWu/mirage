@@ -9,6 +9,7 @@ const foreground = document.getElementById('foreground') as HTMLInputElement;
 const background = document.getElementById('background') as HTMLInputElement;
 const render = document.getElementById('render') as HTMLCanvasElement;
 const output = document.getElementById('output') as HTMLCanvasElement;
+const download = document.getElementById('download') as HTMLAnchorElement;
 
 function run(f, b) {
   return mirage(f, b).then(({ result }) => {
@@ -17,6 +18,8 @@ function run(f, b) {
 
     const context = output.getContext('2d');
     context.drawImage(result, 0, 0);
+
+    download.href = output.toDataURL();
   }).catch(console.log);
 }
 
