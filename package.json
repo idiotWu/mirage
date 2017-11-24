@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./scripts/serve.js",
-    "deploy": "./scripts/deploy.sh"
+    "deploy": "./scripts/deploy.sh",
+    "build": "webpack --config ./scripts/webpack.prod.js"
   },
   "repository": {
     "type": "git",

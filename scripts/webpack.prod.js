@@ -12,15 +12,11 @@ module.exports = merge(baseConfig, {
     joinRoot('src/index.ts'),
   ],
   output: {
-    path: joinRoot('dist/'),
+    path: joinRoot('build/'),
     filename: 'app.js',
   },
   plugins: [
-    new UglifyJSPlugin({
-      output: {
-        comments: false,
-      },
-    }),
+    new UglifyJSPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
   ],
 });

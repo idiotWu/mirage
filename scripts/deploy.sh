@@ -29,13 +29,13 @@ cd ..
 rm -rf ./out/**/* || exit 0
 
 # Compiling
-npm run ghpages
+npm run build
 
 # Copy files
 echo "Copying new contents"
 cp -v ./src/index.html ./out
 cp -vr ./src/images ./out
-cp -vr ./dist/* ./out
+cp -vr ./build/* ./out
 cd ./out
 
 # Now let's go have some fun with the cloned repo
