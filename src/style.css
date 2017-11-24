@@ -22,7 +22,7 @@
   transition: background 1s;
 }
 
-#output:hover {
+#show:hover #output {
   background: #000;
 }
 
@@ -38,6 +38,6 @@
   animation: ticktock 3s ease-in-out infinite alternate;
 }
 
-#output:hover + #mask {
+#show:hover #mask {
   opacity: 0;
 }
