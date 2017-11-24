@@ -6,4 +6,6 @@ env:
 language: node_js
 node_js:
 - stable
+before_install:
+- chmod +x ./scripts/deploy.sh
 script: npm run deploy
