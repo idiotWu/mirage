@@ -4,7 +4,8 @@
   "description": "mirage tank maker",
   "main": "index.js",
   "scripts": {
-    "start": "node ./scripts/serve.js"
+    "start": "node ./scripts/serve.js",
+    "deploy": "./scripts/deploy.sh"
   },
   "repository": {
     "type": "git",
