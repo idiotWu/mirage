@@ -98,7 +98,8 @@ function render(foreground: HTMLCanvasElement, background: HTMLCanvasElement): P
         imageData2.data[offset + 1],
         imageData2.data[offset + 2],
       );
-      const [c, a] = compose(g1 * 0.75 + 63, g2 * 0.25);
+      // const [c, a] = compose(g1 * 0.75 + 63, g2 * 0.25);
+      const [c, a] = compose(g1 * 0.625 + 95, g2 * 0.375);
 
       result.data[offset] = c;
       result.data[offset + 1] = c;

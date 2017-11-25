@@ -1,11 +1,11 @@
 @keyframes ticktock {
   0% {
-    transform-origin: top right;
+    transform-origin: center left;
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform-origin: top right;
-    transform: translate3d(300%, 0, 0);
+    transform-origin: center left;
+    transform: translate3d(400%, 0, 0);
   }
 }
 
@@ -17,7 +17,7 @@
 #output {
   position: relative;
   z-index: 1;
-  margin: 0 20%;
+  padding: 0 10%;
   max-width: 80%;
   transition: background 1s;
 }
@@ -30,7 +30,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 20%;
   height: 100%;
   background: #000;
   z-index: 0;
